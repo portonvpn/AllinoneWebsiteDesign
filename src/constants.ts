@@ -1,0 +1,146 @@
+export interface AppItem {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  url: string;
+  category: 'cemduo' | 'premium' | 'utility' | 'game' | 'streaming';
+  accent: string;
+  isNew?: boolean;
+  isVerified?: boolean;
+}
+
+export const APPS: AppItem[] = [
+  {
+    id: 'cemabyss',
+    name: 'CemAbyss',
+    description: 'Video platform. Watch and upload!',
+    icon: 'smart_display',
+    url: 'https://cemabyss.vercel.app',
+    category: 'cemduo',
+    accent: '#a78bfa',
+    isNew: true,
+  },
+  {
+    id: 'cemgrid',
+    name: 'CemGrid',
+    description: 'Classic kart racing game. Made in Godot.',
+    icon: 'sports_motorsports',
+    url: 'https://cemgrid.vercel.app',
+    category: 'cemduo',
+    accent: '#ff7eb3',
+    isNew: true,
+  },
+  {
+    id: 'diddyshot',
+    name: 'DiddyShot',
+    description: 'FPS monster killer. Made in HTML.',
+    icon: 'gps_fixed',
+    url: 'https://diddyshot.vercel.app',
+    category: 'cemduo',
+    accent: '#f87171',
+    isNew: true,
+  },
+  {
+    id: 'zoripas',
+    name: 'ZorIPAs',
+    description: 'Premium IPA library for iOS. Decrypted.',
+    icon: 'install_mobile',
+    url: 'https://portonvpn.github.io/ZorIPAS/',
+    category: 'premium',
+    accent: '#00D4FF',
+    isVerified: true,
+  },
+  {
+    id: 'netflix',
+    name: 'Netflix Free',
+    description: 'Premium streaming.',
+    icon: 'live_tv',
+    url: 'https://net22.cc/home',
+    category: 'streaming',
+    accent: '#e50914',
+    isNew: true,
+  },
+  {
+    id: 'zorapks',
+    name: 'ZorApks',
+    description: 'Premium Apk library | (by me)',
+    icon: 'shop',
+    url: 'https://portonvpn.github.io/ZorApks/',
+    category: 'premium',
+    accent: '#00e676',
+    isNew: true,
+  },
+  {
+    id: 'yt-premium-tv',
+    name: 'YouTube Premium TV',
+    description: 'Free YouTube Premium on Android TV.',
+    icon: 'workspace_premium',
+    url: 'https://github.com/reisxd/TizenTubeCobalt/releases/download/v1.0.8/cobalt-arm64.apk',
+    category: 'streaming',
+    accent: '#ff143c',
+  },
+  {
+    id: 'minecraft',
+    name: 'Minecraft PE',
+    description: 'v1.26.3.1 Official.',
+    icon: 'layers',
+    url: 'https://dl.mcpelife.com/minecraft-pe/1-26-10-4/minecraft-1.26.10.4-arm64-v8a.apk',
+    category: 'game',
+    accent: '#4caf50',
+  },
+  {
+    id: 'fmhy',
+    name: 'FMHY.net',
+    description: 'Global megathread.',
+    icon: 'language',
+    url: 'https://fmhy.net/',
+    category: 'utility',
+    accent: '#9146ff',
+  },
+  {
+    id: 'gta-v',
+    name: 'GTA V Android',
+    description: 'Full experience mobile.',
+    icon: 'smartphone',
+    url: 'https://mega.nz/file/JtATDKSA#ghftzzoPblrZOjnQ_x5GrNSiRdVvIZIwX7zaMMY3Ovw',
+    category: 'game',
+    accent: '#ffaa00',
+  },
+  {
+    id: 'spotify-dl',
+    name: 'Spotify DL',
+    description: 'Playlist rip.',
+    icon: 'music_note',
+    url: 'https://spotidownloader.com/en14',
+    category: 'utility',
+    accent: '#1ed760',
+  },
+  {
+    id: 'yt-dl',
+    name: 'YouTube Downloader',
+    description: 'Fast download and convert.',
+    icon: 'play_circle',
+    url: 'https://v6.www-y2mate.com/',
+    category: 'utility',
+    accent: '#ff0000',
+  },
+  {
+    id: 'movie-dl',
+    name: 'Movie Downloader',
+    description: 'Pahe.ink high-quality.',
+    icon: 'movie_filter',
+    url: 'https://pahe.ink',
+    category: 'utility',
+    accent: '#00d2ff',
+  },
+  {
+    id: 'game-repacks',
+    name: 'Game Repacks',
+    description: "FitGirl's library.",
+    icon: 'videogame_asset',
+    url: 'https://fitgirl-repacks.site/',
+    category: 'game',
+    accent: '#ff9900',
+  },
+];
